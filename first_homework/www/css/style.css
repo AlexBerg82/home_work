@@ -1,0 +1,53 @@
+﻿h1, p, ul{
+    margin: 0;
+    padding: 0;
+}
+.block-body{
+	width: 570px;
+	height: auto;
+	margin: 0 auto;
+	font: 22px TimesNewRoman;
+}
+/*блок шапка*/
+h1{
+	margin-bottom: 2%;
+	text-align: center;
+	font:bold 28px TimesNewRoman;
+}
+.foto{
+	text-align: center;
+}
+.block-body > p{
+	padding: 2% 0 2% 3%;
+}
+/*блок контент*/
+.wont > p{
+	padding: 3% 0 0 3%;
+}
+ul{
+	padding: 6% 0 2% 9%;
+	line-height: 1.5;
+}
+/*линия*/
+.line{
+    height: 2px;
+	margin: 1% 0 0 1%;
+	background-color: #696969;
+}
+/*блок контакты*/
+.contact{
+	line-height: 1.5;
+}
+.contact .first{
+	padding: 3% 0 3% 3%;
+}
+.contact .second{
+	padding: 2% 0 2% 3%;
+}
+/*блок подвал*/
+.foot{
+	padding: 3% 0 3% 3%;
+}
+.foot p{
+	line-height: 1.5;
+}
