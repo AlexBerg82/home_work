@@ -1,0 +1,130 @@
+h1, p, ul{
+    margin: 0;
+    padding: 0;
+}
+body{
+	background-color: #F8F8F8;
+}
+.block_body{
+	width: 75%;
+	max-width: 750px;
+	margin: 0 auto;
+	background-color: #fff;
+	padding-left: 3%;
+	padding-right: 3%;
+			-moz-box-shadow: 0 -2px 2px #d5d5d5,2px 0 2px #d5d5d5,-2px 0 2px #d5d5d5,0 0 0;
+		-webkit-box-shadow: 0 -2px 2px #d5d5d5,2px 0 2px #d5d5d5,-2px 0 2px #d5d5d5,0 0 0;
+		box-shadow: 0 -2px 2px #d5d5d5,2px -2px 2px #d5d5d5,-2px -2px 2px #d5d5d5,0 0 0;
+}
+/*логотип*/
+.head{
+	overflow: hidden;
+	height: 80px;
+}
+/*верхнее меню*/
+.top_menu{
+	text-align: left;
+	background-color: #4F4F4F;
+}
+.top_menu ul li{
+	display: inline-block;
+	font:bold 13px sans-serif;
+
+}
+.top_menu ul{
+	font-size:0;
+}
+.top_menu ul li a{
+	display: block;
+	text-decoration: none;
+	padding: 8px 30px;
+	color: #fff;
+	border-left: 1px solid #4F4F4F;
+	border-right: 1px solid #4F4F4F;
+}
+.top_menu ul li a:hover{
+	background-color: #363636;
+	border-left: 1px solid #B5B5B5;
+	border-right: 1px solid #B5B5B5;
+}
+/*левая часть*/
+.sidebar{
+	margin-top: 4%;
+	width: 30%;
+	float: left;
+}
+.sidebar ul{
+	border-top: 1px solid #CFCFCF;
+	border-left: 1px solid #CFCFCF;
+	border-right: 1px solid #CFCFCF;
+}
+.sidebar_menu li{
+	font: 12px sans-serif;
+	text-align: left;
+	background-color: #fff;
+	height: 30px;
+	list-style-type: none;
+	border-bottom: 1px solid #CFCFCF;
+						
+}
+.sidebar_menu li a{
+	color: #4F4F4F;
+	display: block;
+	text-decoration: none;
+	padding: 8px 15px;
+}
+.sidebar_menu li a:hover{
+	background-color: #F8F8F8;
+	padding-left: 25px;
+	color: #000;
+}
+/*правая часть*/
+.content{
+	margin-top: 4%;
+	width: 65%;
+	float: right;
+}
+.content img{
+	width: 100%;
+	height: 65%;
+}
+.content p{
+	padding-top: 5%;
+	padding-left: 5%;
+	font: 12px sans-serif;
+}
+/*подвал*/
+.foot{
+	padding-top: 5%;
+	padding-bottom: 5%;
+	clear: both;
+}
+.bottom_menu{
+	background-color: #E8E8E8;
+}
+.bottom_menu p{
+	float: left;
+	font: 11px sans-serif;
+	color: #4F4F4F;
+	text-align: left;
+ 	padding: 8px 15px;
+	float:right;
+}
+.bottom_menu ul{
+	font-size:0;
+	display: inline-block;
+}
+.bottom_menu ul li{
+	font: 11px sans-serif;
+	display: inline-block;
+	width: 70px;
+	padding: 8px 15px;
+}
+.foot a{
+	color: #4F4F4F;
+	text-decoration: none;
+}
+.foot a:hover{
+	color: #000;
+	border-bottom: 1px solid #B5B5B5;
+}

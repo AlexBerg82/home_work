@@ -1,0 +1,55 @@
+div{
+    margin: 0;
+    padding: 0;
+}
+body{
+	background-color: #E8E8E8;
+}
+.content{
+    margin: 0 auto;
+	width: 80%;
+	overflow: hidden;
+}
+.fon1{
+	width: 100%;
+	background-color: red;
+	float: left;
+	position: relative;
+	right: 60%;
+}
+.fon2{
+	width: 100%;
+	background-color: black;
+	float: left;
+	position: relative;
+	right: 20%;
+}
+.fon3{
+	width: 100%;
+	background-color: #fff;
+	float: left;
+}
+.side{
+	width: 20%;
+	min-height:600px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	left: 80%;
+}
+.main{
+	width: 60%;
+	min-height:600px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	left: 80%;
+}
+.news{
+	width: 20%;
+	min-height:600px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	left: 80%;
+}
