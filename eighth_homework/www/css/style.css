@@ -1785,29 +1785,58 @@ header{
 	margin: 0 auto;
 }
 nav:nth-child(2){
-	overflow: hidden;
-	height: 42px;
+	width: 60%;
+	height: 35px;
+	float: none;
+	padding-top: 5px;
+	padding-left: 0;
+	margin: 0 24% auto;
+	position: absolute;
+	z-index: 99;
 }
 .menu-top_menu{
 	height: 35px;
+	padding-top: 0;
+	float: none;
+	text-align: center;
+	overflow: hidden;
 }
 .menu-top_menu li{
-	width: 25%;
-	margin: 0 auto;
+	width: 100%;
+	margin-right: 0;
+	display: block;
+}
+.one_li-menu > a{
+	padding-top: 4px;
+	padding-bottom: 5px;
 }
 .one_li-menu > a:hover{
-	height: 29px;
+	height: 35px;
+	padding-top: 4px;
+	padding-bottom: 0;
 }
 .menu-top_menu li a{
-	border-bottom: none;
+	height: 30px;
+	display: block;
+	border-bottom: 1px solid rgba(99, 79, 107, 1);
+}
+.one_li-menu a:hover{
+	-webkit-border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	border-radius: 10px 10px 0 0;
 }
 nav:nth-child(2):hover .menu-top_menu{
-	overflow: hidden;
-	background-color: rgba(63, 51, 72, 0);
+	display: block;
+	height: 204px;
+	overflow: visible;
+	background-color: rgba(63, 51, 72, 0.7);
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
 }
 .menu-top_menu li a:hover{
-	background-color: rgba(63, 51, 72, 0);
-	border-bottom: 2px solid #EEC4FF;
+	background-color: #29202F;
+	border-bottom: 1px solid #EEC4FF;
 }
 /*slider*/
 .main_shad{
@@ -1830,7 +1859,7 @@ nav:nth-child(2):hover .menu-top_menu{
 	overflow: hidden;
 }
 .prev-slider{
-	margin: 63px 0 0 82%;
+	margin: 65px 0 0 82%;
 }
 noindex:-o-prefocus,.prev-slider{
 	margin: 80px 0 0 82%;
@@ -1840,7 +1869,7 @@ noindex:-o-prefocus,.prev-slider{
 }
 .active{
 	margin-top: -50px;
-	padding-left: 43%;
+	padding-left: 41%;
 }
 /*ABOUT OUR COMPANY*/
 .bottom_menu{
