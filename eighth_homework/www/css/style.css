@@ -896,7 +896,7 @@ noindex:-o-prefocus,.prev-slider{
 	margin: -255px 0 0 13%;
 }
 .text{
-	width: 25%;
+	width: 45%;
 	height: 120px;
 	padding: 78px 0 0 0;
 	overflow: hidden;
@@ -1296,11 +1296,18 @@ nav:nth-child(2):hover .menu-top_menu{
 }
 /*slider*/
 .main_shad{
-	height: 48%;
+	height: 58%;
 	margin: 6% auto;
 }
 noindex:-o-prefocus,.main_shad{
 	margin: 12% auto;
+}
+.main_slide{
+	max-width: 480px;
+	height: 270px;
+}
+article{
+	height: 200px;
 }
 .info{
 	width: 65%;
@@ -1314,9 +1321,10 @@ noindex:-o-prefocus,.main_shad{
 	margin-top: 7%;
 }
 .active{
-	margin-top: -139px;
+	margin-top: 20px;
 	padding-left: 45%;
 }
+
 .prev-slider{
 	margin: 103px 0 0 82%;
 }
@@ -1324,10 +1332,10 @@ noindex:-o-prefocus,.prev-slider{
 	margin: 130px 0 0 82%;
 }
 .next-slider{
-	margin: -260px 0 0 14%;
+	margin: -197px 0 0 14%;
 }
 .text{
-	width: 29%;
+	width: 45%;
 	height: 80px;
 	padding: 100px 0 0 17px;
 	overflow: hidden;
@@ -1816,7 +1824,7 @@ nav:nth-child(2):hover .menu-top_menu{
 	display: none;
 }
 .text{
-	width: 50%;
+	width: 73%;
 	height: 60px;
 	padding: 62px 0 0 32px;
 	overflow: hidden;
@@ -1828,10 +1836,10 @@ noindex:-o-prefocus,.prev-slider{
 	margin: 80px 0 0 82%;
 }
 .next-slider{
-	margin: -287px 0 0 14%;
+	margin: -225px 0 0 14%;
 }
 .active{
-	margin-top: -205px;
+	margin-top: -50px;
 	padding-left: 43%;
 }
 /*ABOUT OUR COMPANY*/
