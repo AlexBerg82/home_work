@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<!--link rel="stylesheet" type="text/css" href="css/style.css"/-->
+
+<title> JS 1 </title>
+
+</head>
+<body>
+
+<script>
+
+var arr = [];
+for(i=0; arr.length<5; i++){
+	var num = i+1;
+	arr.push(prompt('Имя '+num).toUpperCase());
+}
+
+
+
+
+function checkAge(name){
+	for(key in arr){
+		if(name == arr[key]){
+			return true;
+		}
+	}
+}
+
+name = prompt("Ведите Ваше Имя");
+
+if (checkAge(name)) {
+	alert(name+' Вы успешно вошли!');
+} else {
+	alert('ОШИБКА! Такого имени не существует!');
+}
+
+</script>
+
+</body>
+</html>
