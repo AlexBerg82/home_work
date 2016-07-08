@@ -9,13 +9,12 @@
 <script>
 var arr = [];
 for(i=0; arr.length<5; i++){
-	var num = i+1;
-	arr.push(prompt('Имя '+num).toUpperCase());
+	arr.push(prompt('Имя '+(i+1)).toString());
 }
 
 function checkAge(name){
 	for(key in arr){
-		if(name == arr[key]){
+		if(name === arr[key]){
 			return true;
 		}
 	}
@@ -23,10 +22,14 @@ function checkAge(name){
 
 name = prompt("Ведите Ваше Имя");
 
-if (checkAge(name)) {
-	alert(name+' Вы успешно вошли!');
-} else {
-	alert('ОШИБКА! Такого имени не существует!');
+if(name == ''){
+	alert('Вы ничего не запросили!');
+	} else {
+	if(checkAge(name)){
+		alert(name+' Вы успешно вошли!');
+	} else {
+		alert('ОШИБКА! Такого имени не существует!');
+	}
 }
 </script>
 
