@@ -1,0 +1,62 @@
+body{
+	font-family: sans-serif;
+	font-size: 18px;
+}
+.clearfix{
+	content: "";
+    display: table;
+    clear: both;
+}
+.box{
+	width: 600px;
+	height: 505px;
+	margin: 0 auto;
+	padding: 30px 100px 100px 65px;
+}
+.titl{
+	margin-bottom: 45px;
+	font-size: 18px;
+	text-align: center;
+}
+.boxcheck{
+	width: 200px;
+	padding-left: 38px;
+}
+input[type=checkbox]{
+	display: none;
+}
+label{
+	display: block;
+	padding-left: 10px;
+	position: relative;
+}
+label:before{
+	content: "";
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	display: inline-block;
+	left: -15px;
+	top: 1px;
+	background: url(../img/chn.png);
+}
+input[type=checkbox]:checked + label:before{
+	content: "\2713";
+	font-size: 16px;
+	font-weight: 700;
+	color: #000;
+	text-align: center;
+    line-height: 19px;
+}
+.butt{
+	display: block;
+	margin: 55px auto;
+	padding: 15px 45px;
+	cursor: pointer;
+	font-size: 18px;
+	border: 2px solid #000;
+	background-color: #CFE1F5;
+}
+.butt:hover{
+	background-color: #9C9C9C;
+}
