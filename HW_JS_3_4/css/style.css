@@ -48,7 +48,7 @@ input[type=checkbox]:checked + label:before{
 	text-align: center;
     line-height: 19px;
 }
-.butt{
+.butn{
 	display: block;
 	margin: 55px auto;
 	padding: 15px 45px;
@@ -57,6 +57,6 @@ input[type=checkbox]:checked + label:before{
 	border: 2px solid #000;
 	background-color: #CFE1F5;
 }
-.butt:hover{
+.butn:hover{
 	background-color: #9C9C9C;
 }
