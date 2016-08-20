@@ -1,0 +1,70 @@
+.check{
+	width: 120px;
+	height: 53px;
+	padding: 5px;
+	background: rgba(153, 204, 155, 0.4);
+}
+.check2{
+	width: 120px;
+	height: 62px;
+	padding: 5px;
+	background: rgba(255, 120, 100, 0.4);
+}
+.check div{
+	font-family: sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+}
+.check2 div{
+	font-family: sans-serif;
+	font-size: 18px;
+	padding-left: 33px;
+}
+/*jQuery*/
+div.cb{
+	width: 13px;
+	height: 16px;
+	padding-left: 20px;
+	border: 0;
+	background: url(../images/cb_uncheck.png) no-repeat top left;
+	float: left;
+}
+div.cb:hover{
+	background: url(../images/cb_uncheck_m_on.png) no-repeat top left;
+}
+div.cb.checked{
+	background: url(../images/cb_check.png) no-repeat top left;
+}
+div.cb.checked:hover{
+	background: url(../images/cb_check_m_on.png) no-repeat top left;
+}
+form{
+	line-height: 1.2;
+}
+/*CSS*/
+input[type=checkbox]{
+	display: none;
+}
+label{
+	display: block;
+	padding-left: 10px;
+	position: relative;
+}
+label:before{
+	content: "";
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	display: inline-block;
+	left: -33px;
+	top: 1px;
+	background: url(../images/chn.png);
+}
+input[type=checkbox]:checked + label:before{
+	content: "\2713";
+	font-size: 16px;
+	font-weight: 700;
+	color: #000;
+	text-align: center;
+    line-height: 19px;
+}

@@ -1,0 +1,91 @@
+div, ul, li, p, body{
+    margin: 0;
+    padding: 0;
+}
+.clearfix:after {
+	content: "";
+    display: table;
+    clear: both;
+}
+/*основное меню и выпадающее меню*/
+.top_menu{
+	z-index: 99;
+	position: relative;
+	background-color: #FF6464;
+}
+.menu{
+	margin-left: 100px;
+	list-style: none;
+ 	text-align: left;
+	font-size: 0;
+}
+.menu li{
+	margin: 0;
+	padding: 0;
+	float: left;
+	cursor: pointer;
+	position: relative;
+	background-color: #FF6464;
+	font:bold 13px sans-serif;
+	list-style-type: none;
+	padding: 15px 0px 15px 0px;
+}
+.menu > li > a{
+	display: block;
+	text-decoration: none;
+	padding: 6px 0px 6px 60px;
+	color: #fff;
+}
+.submenu li,.services li,.submenu li{
+	padding: 3px 0px 0px 0px;
+	background-color: #E14B4B;
+	width: 100%;
+	margin: 0 auto;
+}
+.travels, .services, .partners, .submenu, .submenu2{
+	background-color: #E14B4B;
+	display: none;
+	width: 180px;
+	position: absolute;
+	font:bold 13px sans-serif;
+	left: 50px;
+	z-index: 999;
+	padding-bottom: 3px;
+}
+.submenu{
+	margin-left: 66px;
+	top: 0px;
+	left: 105px;
+}
+.submenu2{
+	top: 0px;
+	margin-left: 120px;
+}
+.submenu li:last-child a,.services li:last-child a,.submenu2 li:last-child a{
+	border: none;
+}
+.travels > li > a, .services > li > a, .partners > li > a,.submenu > li > a,.submenu2 > li > a{
+	display: block;
+	text-decoration: none;
+	padding: 8px 0px 10px 2px;
+	width: 90%;
+	color: #fff;
+	margin: 0 auto;
+	border-bottom: 1px solid #C83232;
+}
+.submenu li:last-child a,.services li:last-child a,.submenu2 li:last-child a{
+	padding-bottom: 7px;
+}
+.travels > li > a:hover, .services > li > a:hover, .partners > li > a:hover,.submenu > li > a:hover,.submenu2 > li > a:hover{
+	color: #000;
+	font: 13px sans-serif;
+}
+.main_submenu > a > span:nth-child(1),.main_submenu > a > span:nth-child(2),.main_submenu2 > a > span:nth-child(1),.main_submenu2 > a > span:nth-child(2){
+	font: 13px sans-serif;
+}
+.main_submenu > a > span:nth-child(2){
+	padding-left: 62%;
+}
+.main_submenu2 > a > span:nth-child(2){
+	padding-left: 55%;
+}

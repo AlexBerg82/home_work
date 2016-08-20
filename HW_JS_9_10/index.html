@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Menu,Carousel,Checkbox</title>
+
+		<link rel="stylesheet" type="text/css" href="css/menu.style.css">
+        <link rel="stylesheet" type="text/css" href="css/jcarousel.style.css">
+		<link rel="stylesheet" type="text/css" href="css/checkbox.style.css">
+		
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+        <script type="text/javascript" src="js/slide.js"></script>
+		<script type="text/javascript" src="js/jquery.checkbox.js"></script>
+		<script type="text/javascript" src="js/checkbox.js"></script>
+		<script type="text/javascript" src="js/menu.js"></script>
+		<script type="text/javascript" src="js/jquery.color.js"></script>
+		<script type="text/javascript" src="js/color.js"></script>
+</head>
+<body>
+
+<div class="top_menu">
+	<ul class="menu clearfix">
+		<li><a href="#">Nav 1</a></li>
+		<li class="travel"><a href="#">Nav 2&nbsp;&#9660;</a>
+			<ul class="travels">
+				<li><a href="#">Nav 2.1</a></li>
+				<li><a href="#">Nav 2.2</a></li>
+				<li><a href="#">Nav 2.3</a></li>
+				<li><a href="#">Nav 2.4</a></li>
+				<li><a href="#">Nav 2.5</a></li>
+			</ul>
+		</li>
+		<li class="service"><a href="#">Nav 3&nbsp;&#9660;</a>
+			<ul class="services">
+				<li><a href="#">Nav 3.1</a></li>
+				<li><a href="#">Nav 3.2</a></li>
+				<li><a href="#">Nav 3.3</a></li>
+				<li class="main_submenu"><a href="#"><span>Nav 3.4</span><span>&#9658;</span></a>
+					<ul class="submenu">
+						<li><a href="#">Nav 3.4.1</a></li>
+						<li class="main_submenu2"><a href="#"><span>Nav 3.4.2</span><span>&#9658;</span></a>
+							<ul class="submenu2">
+								<li><a href="#">Nav 3.4.1</a></li>
+								<li><a href="#">Nav 3.4.2</a></li>
+								<li><a href="#">Nav 3.4.3</a></li>
+								<li><a href="#">Nav 3.4.4</a></li>
+								<li><a href="#">Nav 3.4.5</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Nav 3.4.3</a></li>
+						<li><a href="#">Nav 3.4.4</a></li>
+						<li><a href="#">Nav 3.4.5</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Nav 3.5</a></li>
+			</ul>
+		</li>
+		<li class="partner"><a href="#">Nav 4&nbsp;&#9660;</a>
+			<ul class="partners">
+				<li><a href="#">Nav 4.1</a></li>
+				<li><a href="#">Nav 4.2</a></li>
+				<li><a href="#">Nav 4.3</a></li>
+				<li><a href="#">Nav 4.4</a></li>
+				<li><a href="#">Nav 4.5</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Nav 5</a></li>
+	</ul>
+</div><!--top_menu-->
+
+
+<div class="wrapper">
+    <h1>Carousel</h1>
+    <h3>The example</h3>
+	<div class="shadow"></div>
+    <div class="jcarousel-wrapper">
+
+        <div class="jcarousel">
+            <ul>
+                <li><img src="./img/1.jpg" width="600" height="400" alt=""></li>
+                <li><img src="./img/2.jpg" width="600" height="400" alt=""></li>
+                <li><img src="./img/3.jpg" width="600" height="400" alt=""></li>
+                <li><img src="./img/4.jpg" width="600" height="400" alt=""></li>
+            </ul>
+        </div>
+
+		<p class="photo-credits">Photos by <a href="http://www.mw-fotografie.de">Marc Wiegelmann</a></p>
+
+		<a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+		<a href="#" class="jcarousel-control-next">&rsaquo;</a>
+
+		<p class="jcarousel-pagination"></p>
+    </div>
+</div><!--wrapper_slide-->
+
+<!--checkbox-->
+<div class="check">
+    <div><input type="checkbox" class="cb" id="checkbox1" name="checkbox1" value="true">1</div>
+    <div><input type="checkbox" class="cb" id="checkbox2" name="checkbox2" value="true">2</div>
+	<div><input type="checkbox" class="cb" id="checkbox3" name="checkbox3" value="true">3</div>
+</div>
+<div class="check2">
+    <div><input type="checkbox" id="chk1" name="checkbox1" value="true"><label for="chk1"></label>4</div>
+    <div><input type="checkbox" id="chk2" name="checkbox2" value="true"><label for="chk2"></label>5</div>
+	<div><input type="checkbox" id="chk3" name="checkbox3" value="true"><label for="chk3"></label>6</div>
+</div><!--checkbox-->
+
+</body>
+</html>
