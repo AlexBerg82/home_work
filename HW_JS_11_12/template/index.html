@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HW 11-12</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/tmpl.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+
+<script type="text/template" id="test">
+
+<div class="block-body">
+	<h1><%= title %></h1>
+	<div class="foto"><img src="<%= picture %>" alt="no-foto" /></div>
+	<p><%= student %></p>
+	<div class="line"></div>
+	<div class="wont">
+	<p><%= want %></p>
+	<ul>
+		<li><%= var1 %></li>
+		<li><%= var2 %></li>
+		<li><%= var3 %></li>
+	</ul>
+	</div>
+	<div class="line"></div>
+	<div class="contact">
+		<div class="first">
+			<p><%= contact %></p>
+			<p><%= phone %></p>
+		</div>
+		<div class="second">
+			<p><%= profile %></p>
+			<p><a href="<%= link_profile %>" target="_blank"><%= profile_name %></a></p>
+		</div>
+	</div>
+	<div class="line"></div>
+	<div class="foot">
+		<p><%= feedbak %></p>
+		<p><%= text_feed %></p>
+	</div>
+</div>
+
+</script>
+
+</body>
+</html>
