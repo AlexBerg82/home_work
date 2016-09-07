@@ -34,7 +34,7 @@ function increment(){
 			var hours = Math.floor(time/10/60/60);
 			var mins = Math.floor(time/10/60);
 			var secs = Math.floor(secr/10);
-			var tenths = Math.floor(msec*120);
+			var tenths = Math.floor(((msec*59)*59)/36);
 			
 			if(hours<10){
 				hours="0"+hours;

@@ -1,0 +1,45 @@
+<html>
+<head>
+  <title>My Class</title>
+  
+<script>
+	function Human(name,age,sex,height,weight){
+	  this.name = name;
+	  this.age = age;
+	  this.sex = sex;
+	  this.height = height;
+	  this.weight = weight;
+	}
+	function Worker(jobb,salary){
+		this.jobb = jobb;
+		this.salary = salary;
+		function work(){
+			//...
+		}
+	}
+	function Student(placeStudy,scholarship){
+		this.placeStudy = placeStudy;
+		this.scholarship = scholarship;
+		function watchTv(){
+			//...
+		}
+	}
+
+	var human = new Human("Ivan", 21, "male", 175, 66);
+	var worker = new Worker("Helsinki", 10000);
+	var student = new Student("KPI", 500);
+
+	worker.__proto__ = human;
+	student.__proto__ = worker;
+
+	console.log(human);
+	console.log(worker);
+	console.log(student);
+	
+	console.log(worker.sex);
+	console.log(student.jobb);
+</script>
+
+</head>
+<body></body>
+</html>
