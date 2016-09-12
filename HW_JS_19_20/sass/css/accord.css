@@ -1,0 +1,86 @@
+.wrapper_accord{
+	width: 560px;
+	padding-left:30px;
+	padding-top:30px;
+}
+.accordion li {
+	list-style: none;
+	margin-top: 5px;
+}
+
+.accordion li > a {
+	display: block;
+	position: relative;
+	min-width: 110px;
+	padding: 0 10px 0 50px;
+	height: 40px;
+	color: #000;
+	font: bold 12px/41px Arial, sans-serif;
+	text-decoration: none;
+	background: #fff;
+	border:1px solid #E8E8E8;
+}
+
+.accordion > li:hover > a{
+	color: #2A2D32;
+	background: #EFEFEF;
+}
+.accordion > li > a.active {
+	color: #fff;
+	background: #F4B60D;
+	border:1px solid #F4B60D
+}
+
+.accordion > li > a:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: '';
+	width: 40px;
+	height: 40px;
+	background-image: url(../img/icons.png);
+	background-position: 0px 0px;
+}
+
+.accordion li.files > a:before { background-position: 0px -43px; border-right:2px solid #E8E8E8;}
+.accordion li.files:hover > a:before,
+.accordion li.files:target > a:before,
+.accordion li.files > a.active:before { background-position: 0px 0px; border-right:1px solid #F6C53D;}
+
+.accordion li.mail > a:before { background-position: 0px -43px; border-right:2px solid #E8E8E8;}
+.accordion li.mail:hover > a:before,
+.accordion li.mail:target > a:before,
+.accordion li.mail > a.active:before { background-position: 0px 0px; border-right:1px solid #F6C53D;}
+
+.accordion li.cloud > a:before { background-position: 0px -43px; border-right:2px solid #E8E8E8;}
+.accordion li.cloud:hover > a:before,
+.accordion li.cloud:target > a:before,
+.accordion li.cloud > a.active:before { background-position: 0px 0px; border-right:1px solid #F6C53D;}
+
+.accordion li.sign > a:before { background-position: 0px -43px; border-right:2px solid #E8E8E8;}
+.accordion li.sign:hover > a:before,
+.accordion li.sign:target > a:before,
+.accordion li.sign > a.active:before { background-position: 0px 0px; border-right:1px solid #F6C53D;}
+
+.sub-menu li a {
+	color: #797979;
+	background: #F7F7F7;
+	height:auto;
+	line-height:20px;
+	padding-top:25px;
+	padding-bottom: 25px;
+	font-weight:400;
+}
+.sub-menu li:hover a {
+	background: #efefef;
+}
+.sub-menu li:last-child a {
+	border: none;
+}
+
+.accordion li > .sub-menu {
+	display: none;
+}
+.accordion li:target > .sub-menu {
+	display: block;
+}
