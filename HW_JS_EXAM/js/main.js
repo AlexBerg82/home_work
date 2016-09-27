@@ -1,18 +1,15 @@
 $(function(){
 
-//Show/hide loginn
- $("#sign_inn").click(function(){
+//show/hide loginn
+$("#sign_inn").click(function(){
 	$(".login-form").slideToggle("slow");
 });
 
-
-
-
-// Check if JavaScript is enabled
+//check if JavaScript is enabled
 $('.right_top_block').addClass('js');
-// Checkbox checked on load
+//checkbox checked on load
 $('.login-form span').addClass('checked').children('input').attr('checked', true);
-// Click function
+//click function
 $('.login-form span').on('click', function(){
 	if ($(this).children('input').attr('checked')){
 		$(this).children('input').attr('checked', false);
@@ -23,9 +20,7 @@ $('.login-form span').on('click', function(){
 	}
 });
 
-
-
-//Show/hide signinn
+//show/hide signinn
 $("#sign_up_btn").click(function(){
 	$(".login-form").hide();
 	
@@ -56,10 +51,6 @@ $("#sign_up_btn").click(function(){
 		$('.modal').empty().remove();
 	});
 });
-
-
-
-
 
 //slider
 $(function(){
@@ -92,16 +83,8 @@ $(function(){
     });
 });
 
-
-
-
-
-
-
-
-
-
-btn_search.onclick = function(){
+//search
+ btn_search.onclick = function(){
 	$('.item').empty().remove();
 	
 	var input_search = $("#search_inn").val();
@@ -113,38 +96,27 @@ btn_search.onclick = function(){
 				$.each(hit, function(key2, value){
 					
 					$('#container').append('<div class="item"><p>'+value.tags+'</p><img src="'+value.webformatURL+'" alt="no-foto">');
-
-					console.log(value);
+					
 				});
 			});
 		});
 }
 
-	
-
+//search random
 var URL = "https://pixabay.com/api/?key=3215553-dad85728d2c4b345f2ce56378&per_page=7";
 		$.getJSON(URL, function(data){
 			var seriaData = JSON.stringify(data);
 			var returnObj = JSON.parse(seriaData);
-			$.each(returnObj, function(key, hit){
-				$.each(hit, function(key2, value){
-					
-					$('#container').append('<div class="item"><p>'+value.tags+'</p><img src="'+value.webformatURL+'" alt="no-foto">');
-
-				});
-			});
+			
+			for(var i = 0; i < returnObj.hits.length; i++) {
+				$('#container').append('<div class="item"><p><a href="">'+returnObj.hits[i].tags+'</a></p><img src="'+returnObj.hits[i].webformatURL+'" alt="no-foto">');
+			}
 		});
 
-
-
-
-
-	//init mozaic
-	$('#container').masonry({
-		itemSelector: '.item',
-		columnWidth: 320
-	});
-
-
+//init mozaic
+$('#container').masonry({
+	itemSelector: '.item',
+	columnWidth: 320
+});
 
 });
