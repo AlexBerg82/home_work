@@ -1,0 +1,38 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HW 13-14</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/tmpl.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+
+<div class="box">
+<div class="titlo"></div>
+
+<div class="vars">
+	<script type="text/template" id="test">
+		<div class="boxcheck clearfix">
+		<% n = 3; %>
+		<% for(i=0;i<n;i++){ %>
+			<p><%= whats[i] %></p>
+			
+			<% j=i; %>
+			<% if(j==i){ %>
+				<% for(k=0;k<n;k++){ %>
+					<input type="checkbox" id="chk<%= i %><%= k %>"><label for="chk<%= i %><%= k %>"><%= variants[j][k] %></label>
+				<% }; %>
+			<% }; %>
+			
+		<% }; %>
+		</div>
+	</script>
+</div>
+
+<div class="foot"></div>
+</div>
+</body>
+</html>
